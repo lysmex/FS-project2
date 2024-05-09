@@ -15,8 +15,7 @@ app.use(bodyParser.json());
 // Yhdistetään MongoDB
 mongoose.connect(process.env.MONGODB_URI);
 
-// Määrittele reitti
-app.use('/api', Router);
+app.use('/', Router);
 
 // Käynnistä serveri
 app.listen(PORT, () => {

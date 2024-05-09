@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Marcellus&display=swap");
+
+html,
+body,
+.container {
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  background-color: #f6f5f2;
+  font-family: "Marcellus";
+}
+
+h1 {
+  color: #797c62;
+}

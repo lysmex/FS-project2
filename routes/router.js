@@ -1,9 +1,15 @@
 // MÄÄRITTELE REITIT
 const express = require("express");
 const router = express.Router();
+const path = require('path');
 
 // tuodaan schema
 const Item = require("../models/item");
+
+// näytä index.html juurireitissä
+router.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, '..', 'public', 'index.html'));
+});
 
 // REITTI 1 - return all
 router.get("/getall", async (req, res) => {
